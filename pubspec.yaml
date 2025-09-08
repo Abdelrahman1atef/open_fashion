@@ -1,0 +1,49 @@
+name: open_fashion
+description: "A new Flutter project."
+publish_to: 'none'
+version: 0.1.0
+
+environment:
+  sdk: ^3.9.0
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_svg:
+  gap:
+  ionicons:
+  flutter_credit_card: ^4.1.0 
+
+
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+  build_runner:
+  flutter_gen_runner:
+
+flutter:
+  generate: true
+  uses-material-design: true
+  assets:
+    - assets/cover/
+    - assets/logo/
+    - assets/pop/
+    - assets/product/
+    - assets/svgs/
+    - assets/texts/
+
+  fonts:
+    - family: TenorSans
+      fonts:
+        - asset: assets/fonts/Tenor_Sans/TenorSans-Regular.ttf
+
+
+flutter_gen:
+  output: lib/gen/
+  integrations:
+    flutter_svg: true
+  colors:
+    inputs:
+      - assets/colors/colors.xml
